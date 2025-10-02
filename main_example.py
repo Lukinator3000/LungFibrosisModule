@@ -1,5 +1,7 @@
 '''Module 2: count black and white pixels in a .jpg and extrapolate points'''
 
+# https://www.freecodecamp.org/news/git-and-github-for-beginners/
+
 from termcolor import colored
 import cv2
 import numpy as np
@@ -16,17 +18,17 @@ filenames = [
     r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010021.jpg",
     r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010022.jpg",
     r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010023.jpg",
-            ]
+    ]
 
 # Enter the depth of each image (in the same order that the images are listed above; you can find these in the .csv file provided to you which is tilted: "Filenames and Depths for Students")
 
 depths = [
     45,
+    90,
     60,
+    30,
     80,
-    570,
-    955,
-    2800
+    100
     ]
 
 # Make the lists that will be used
