@@ -11,24 +11,36 @@ import pandas as pd
 
 # Load the images you want to analyze
 
+"""
 filenames = [
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010017.jpg",
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010018.jpg",
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010019.jpg",
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010021.jpg",
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010022.jpg",
-    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Llobe ch010023.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_Sk658 Llobe ch010032.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_Sk658 Llobe ch010146.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_SK658 Slobe ch010110.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_SK658 Slobe ch010063.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_SK658 Slobe ch010136.jpg",
+    r"/Users/jayakinley/Desktop/compbme/course_files_export/MASK_SK658 Slobe ch010098.jpg",
     ]
+"""
+filenames = [
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_Sk658 Llobe ch010032.jpg",
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_Sk658 Llobe ch010146.jpg",
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Slobe ch010110.jpg",
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Slobe ch010063.jpg",
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Slobe ch010136.jpg",
+    r"/Users/Lukin/OneDrive/Desktop/UVA Stuff/Comp BME/Lung_Fibrosis_Jupyter/course_files_export/MASK_SK658 Slobe ch010098.jpg",
+    ] 
+
+
 
 # Enter the depth of each image (in the same order that the images are listed above; you can find these in the .csv file provided to you which is tilted: "Filenames and Depths for Students")
 
 depths = [
-    45,
-    90,
-    60,
-    30,
-    80,
-    100
+    500,
+    2000,
+    5300,
+    7400,
+    9200,
+    10000,
     ]
 
 # Make the lists that will be used
@@ -130,5 +142,7 @@ axs[1].scatter(depths_i[len(depths_i)-1], white_percents_i[len(white_percents_i)
 
 # Adjust layout to prevent overlap
 plt.tight_layout()
+fig.set_figwidth(10)
+fig.set_figheight(40)
 plt.show()
 
